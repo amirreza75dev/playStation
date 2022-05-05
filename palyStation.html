@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Play station</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar"> 
+            <img src="./img/logo.png" alt="">
+            <ul id="ul">
+                <li>MEDIA</li>
+                <li>GAME</li>
+                <li>ACCESSORIES</li>
+                <li>OTHERS</li>
+            </ul>
+            <img class="menu" src="./img/menu.png" alt="" onclick="toggle()">
+        </div>
+
+        <div class="main">
+            <div class="col-1">
+                <h1>PS4 V2</h1>
+                <h1>DUALSHOCK 4</h1>
+                <p>Wireless Controller for PlayStation 4</p>
+                <span>$32.50</span>
+                <button>Buy Now <img src="./img/arrow.png" alt=""></button>
+            </div>
+
+
+            <div class="col-2">
+                <div class="cover"></div>
+                <img class="control" src="./img/controller.png" alt="">
+                <div class="card">
+                    <img src="./img/add.png" alt="">
+                    <span>Add to Card</span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="social">
+            <img src="./img/fb.png" alt="">
+            <img src="./img/ig.png" alt="">
+            <img src="./img/tw.png" alt="">
+        </div>
+        
+    </div>
+    <script>
+        let ul = document.getElementById("ul");
+        ul.style.height = "0px"
+        
+        const toggle = ()=>{
+
+
+            
+                if(ul.style.height == "0px"){
+                    ul.style.height = "80px";
+                    console.log("avali");
+                    
+                }
+                else{
+                    ul.style.height = "0px";
+                    console.log("dovomi");
+                }
+
+
+
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
